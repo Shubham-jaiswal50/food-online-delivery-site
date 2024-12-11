@@ -3,26 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/main.css">
+
     <title>Document</title>
 </head>
 <body>
-    Enter reseturant name :  <input type="text" id="res"><br><br>
+
+    <div class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="/image/logo.png" alt="Order Karo Logo">
+            Order Karo
+        </div>
+
+        <!-- Search Container -->
+        <div class="search-container">
+            <input type="text" id="demo1" placeholder="Search restaurants by location" required>
+            <input type="text" id="demo2" placeholder="Search restaurants by name">
+        </div>
+
+        <!-- Icon Buttons -->
+        <div class="icons">
+           <a href="../html/mycartpage.html"><i class="fas fa-shopping-cart" title="Cart"></i></a> 
+            <i class="fas fa-user" title="Profile"></i>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="/image/banner.jpg" alt="">
+
+
+
+    </div>
+
+    <!-- Other Content -->
+
+    <div id="show12">
+
+
+    </div>
+   
+    <script src="./js/location.js"></script>
+    <script src="./js/milandata.js"></script>
+<script src="./js/milanmenu.js"></script>
+
     
-    resturant image:  <input type="text" id="img">
-    location :  <input type="text" id="loc"><br><br>
-    resturant type :<input type="text" id="type"><br><br>
-    contact number: <input type="text" id="num"><br><br>
 
+    <a href="./html/showmenu.html"></a>
 
-
-    <button id="save"> save data!</button>
-    <script src="../js/script.js"></script>
-    
-
-    
-
-
-
-    
 </body>
 </html>
