@@ -1,8 +1,18 @@
 
 // alert("1st serch by location!! then by resturant name!!")
 
-document.getElementById("demo1").addEventListener("keyup",city)
-document.getElementById("demo2").addEventListener("keyup",name12)
+let debounceTimeout;
+
+function debounce(callback, delay) {
+    clearTimeout(debounceTimeout);
+    debounceTimeout = setTimeout(callback, delay);
+}
+
+document.getElementById("demo1").addEventListener("keyup", () => {
+    debounce(() => {
+        city(); // Call the actual function after the delay
+    }, 300); // Delay of 300ms
+});
 
 async function city(){
 
